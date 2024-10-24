@@ -1,5 +1,0 @@
----- FERIAS DOS FUNCIONARIOS ----
-Quantidade: 2
-Valor de ferias:
-   Thiago (ferias = R$ 2000,00)
-   Roseneia (ferias = R$ 3200,00)

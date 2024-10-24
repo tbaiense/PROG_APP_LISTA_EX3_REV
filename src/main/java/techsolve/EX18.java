@@ -77,7 +77,7 @@ public class EX18 {
         }
         
         String log = strInformacoes.toString();
-        
+        JOptionPane.showMessageDialog(null, log, "Informações de férias", JOptionPane.INFORMATION_MESSAGE);
         FileWriter arquivo = new FileWriter("EX18-FERIAS-FUNCIONARIOS.txt");
         PrintWriter impressora = new PrintWriter(arquivo);
         impressora.printf(log);
