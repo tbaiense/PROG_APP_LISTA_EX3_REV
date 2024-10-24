@@ -47,11 +47,11 @@ public class EX15 {
             for (int i = 0; i < nomeGeneros.length; i++) {
                 System.out.printf("%d -- %s \n", (i+1), nomeGeneros[i]);
             }
-            System.out.print("\nDigite o codigo do genero favorito\n>>> ");
+            System.out.printf("\nOuvinte n. %d, digite o codigo do genero favorito\n>>> ", p+1);
             in = new Scanner(System.in);
-            genEscolhido = in.nextInt();
+            genEscolhido = in.nextInt() - 1;
             
-            if (genEscolhido < 0 | genEscolhido > nomeGeneros.length) {
+            if (genEscolhido < 0 | genEscolhido >= nomeGeneros.length) {
                 System.out.println("Genero nao encontrado! Tente novamente.");
                 p--;
                 continue;
