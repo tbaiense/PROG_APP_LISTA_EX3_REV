@@ -69,7 +69,7 @@ public class EX10 {
         
         resultado = strRecibo.toString();
         JOptionPane.showMessageDialog(null, resultado, "Resultado da pesquisa", JOptionPane.INFORMATION_MESSAGE);
-        FileWriter arquivo = new FileWriter("C:\\Users\\Public\\EX10-PESQUISA.txt");
+        FileWriter arquivo = new FileWriter("EX10-PESQUISA.txt");
         PrintWriter impressora = new PrintWriter(arquivo);
         impressora.printf(resultado);
         arquivo.close();

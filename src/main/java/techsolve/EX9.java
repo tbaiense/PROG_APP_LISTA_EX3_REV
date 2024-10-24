@@ -75,7 +75,6 @@ public class EX9 {
             }
             
             idProdutoCliente[p] = produtoEscolhido;
-            valorPedido += precoProdutos[produtoEscolhido];
             
             // Validacao de qtd
             while (true) {
@@ -91,6 +90,7 @@ public class EX9 {
                     System.out.println("Quantidade inválida. Tente novamente...");
                 }
             }
+            valorPedido += precoProdutos[produtoEscolhido] * qtdProdutoCliente[p];
             
             strRecibo.append(String.format("%2d un.  %s (R$ %2.2f)\n",
                     qtdProdutoCliente[p], 
@@ -101,7 +101,7 @@ public class EX9 {
         strRecibo.append(String.format("\nPRECO TOTAL: R$ %2.2f", valorPedido));
         recibo = strRecibo.toString();
         JOptionPane.showMessageDialog(null, recibo, "Recibo do pedido", JOptionPane.INFORMATION_MESSAGE);
-        FileWriter arquivo = new FileWriter(String.format("C:\\Users\\Public\\EX9-PEDIDO-%s.txt", nomeCliente));
+        FileWriter arquivo = new FileWriter(String.format("EX9-PEDIDO-%s.txt", nomeCliente));
         PrintWriter impressora = new PrintWriter(arquivo);
         impressora.printf(recibo);
         arquivo.close();
