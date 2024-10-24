@@ -181,14 +181,6 @@ public class EX14 {
         return -1;
     }
     
-    public static void cadastrarFuncionario(String nome, double preco) {
-        if (qntCadastrados < qntFuncionarios) {
-            nomeFuncionario[qntCadastrados] = nome.trim();
-            salarioFuncionario[qntCadastrados] = preco;
-            qntCadastrados++;
-        }
-    }
-    
     public static void definirSalario(int index, double salario) {
         if (index >=0 && index < qntCadastrados && salario > 0) {
             salarioFuncionario[index] = salario;
